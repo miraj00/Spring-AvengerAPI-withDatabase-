@@ -81,7 +81,7 @@ public class HomeController {
 		return "Data reset.";
 	}
 	
-	// @PostConstruct means run this automatically when the application starts.
+	// @PostConstruct means run this automatically when the application starts. This creates all objects above.
 	@PostConstruct
 	public void initializeDatabaseIfEmpty() {
 		if (characterRepo.count() == 0) {
